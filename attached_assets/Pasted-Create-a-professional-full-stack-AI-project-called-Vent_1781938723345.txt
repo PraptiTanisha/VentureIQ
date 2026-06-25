@@ -1,0 +1,188 @@
+Create a professional full-stack AI project called **"VentureIQ AI – Business Success Predictor"**.
+
+IMPORTANT REQUIREMENTS:
+
+* Do NOT include any Replit branding.
+* Do NOT create files named replit.md, .replit, .replitignore, or any Replit-specific configuration files.
+* Do NOT mention Replit anywhere in code, README, comments, package.json, metadata, UI text, or documentation.
+* Use a clean industry-standard project structure.
+* Keep the project beginner-friendly and easy to explain during viva/interviews.
+* The project should look professional but should NOT be overly complex.
+* Generate complete frontend and backend code.
+* Ensure the project runs successfully without errors.
+
+TECH STACK:
+
+Frontend:
+
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+* Recharts
+
+Backend:
+
+* Python
+* FastAPI
+
+UI DESIGN:
+
+* Premium corporate design
+* Dark Blue + Black theme
+* White text and subtle gradients
+* Modern dashboard style
+* Responsive layout
+* Professional typography
+* Smooth hover effects
+* Clean cards and sections
+* Suitable for portfolio and recruiter review
+
+PROJECT DESCRIPTION:
+
+VentureIQ AI is a Business Success Prediction platform that helps entrepreneurs evaluate the potential success of a business idea.
+
+The system should use a smart AI-style scoring algorithm (simple logic, not complex machine learning) to generate business insights and recommendations.
+
+FEATURES:
+
+1. Home Page
+
+Include:
+
+* Hero Section
+* Project Description
+* Features Section
+* Call-to-Action Button
+* Professional startup-themed design
+
+2. Business Prediction Form
+
+Users can enter:
+
+* Business Name
+
+* Business Type
+
+  * Technology
+  * E-commerce
+  * Healthcare
+  * Education
+  * Finance
+  * Food & Beverage
+  * Other
+
+* Initial Investment
+
+* Team Size
+
+* Founder Experience (Years)
+
+* Marketing Budget
+
+* Competition Level
+
+  * Low
+  * Medium
+  * High
+
+* Target Market Size
+
+  * Small
+  * Medium
+  * Large
+
+3. AI Prediction Engine
+
+Create a smart scoring system that calculates:
+
+* Success Score (0–100)
+
+* Risk Level
+
+  * Low
+  * Medium
+  * High
+
+* Growth Potential
+
+  * Low
+  * Medium
+  * High
+
+The scoring logic should be realistic, simple, and easy to explain during project presentation.
+
+4. Results Dashboard
+
+Display:
+
+* Success Score
+* Risk Analysis
+* Growth Potential
+* Business Health Indicator
+
+Use:
+
+* Circular Progress Chart
+* Progress Bars
+* Recharts Graphs
+* Professional Dashboard Cards
+
+5. AI Recommendations Section
+
+Generate recommendations such as:
+
+* Increase marketing budget
+* Expand target audience
+* Improve team expertise
+* Reduce competition risk
+* Focus on customer retention
+* Improve product-market fit
+
+Recommendations should be generated dynamically based on user inputs.
+
+6. Backend API
+
+Create FastAPI endpoints:
+
+POST /predict
+
+Input:
+Business details
+
+Output:
+{
+success_score,
+risk_level,
+growth_potential,
+recommendations
+}
+
+Include:
+
+* Validation
+* Error handling
+* Clean JSON responses
+
+PROJECT STRUCTURE:
+
+Use proper folder organization:
+
+frontend/
+backend/
+
+Ensure code is clean, modular, and production-style.
+
+ADDITIONAL REQUIREMENTS:
+
+* Add loading animation during prediction.
+* Add attractive dashboard cards.
+* Add smooth transitions.
+* Add professional icons.
+* Add meaningful dummy data where necessary.
+* Make the application visually impressive for GitHub portfolio.
+* Keep logic easy enough for an MCA student to explain confidently in interviews and project viva.
+
+OUTPUT:
+
+Generate the complete working project with all required files and code.

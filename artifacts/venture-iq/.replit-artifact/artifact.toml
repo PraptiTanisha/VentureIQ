@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "VentureIQ AI"
+version = "1.0.0"
+id = "artifacts/venture-iq"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21758
+
+[services.development]
+run = "pnpm --filter @workspace/venture-iq run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/venture-iq", "run", "build" ]
+publicDir = "artifacts/venture-iq/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21758"
+BASE_PATH = "/"

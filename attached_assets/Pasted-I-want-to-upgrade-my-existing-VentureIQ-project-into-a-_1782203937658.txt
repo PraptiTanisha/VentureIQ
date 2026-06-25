@@ -1,0 +1,92 @@
+I want to upgrade my existing VentureIQ project into a professional Python + Machine Learning portfolio project.
+
+Current project:
+
+* React + TypeScript frontend
+* Business Success Prediction platform
+* Rule-based prediction logic
+
+Requirements:
+
+1. Keep the existing React frontend unchanged as much as possible.
+
+2. Replace the current prediction backend with Python FastAPI.
+
+3. Use the following Python technologies:
+
+   * Python 3.10+
+   * FastAPI
+   * Pandas
+   * NumPy
+   * Scikit-Learn
+   * Joblib
+
+4. Convert the project into a real Machine Learning application.
+
+5. Create a startup/business success prediction ML pipeline:
+   Input features:
+
+   * Investment Amount
+   * Team Size
+   * Founder Experience
+   * Marketing Budget
+   * Competition Level
+   * Market Size
+
+   Output:
+
+   * Success Probability (%)
+   * Risk Level
+   * Growth Potential
+   * Recommendations
+
+6. Create a realistic training dataset and train a machine learning model.
+
+7. Use a proper ML model such as:
+
+   * Random Forest Classifier
+     OR
+   * XGBoost (if available)
+
+8. Save the trained model as:
+
+   * model.pkl
+
+9. Create FastAPI endpoints:
+
+   GET /health
+
+   POST /predict
+
+10. Prediction endpoint should:
+
+* Load trained model
+* Accept JSON input
+* Return prediction result
+
+11. Connect React frontend to FastAPI backend.
+
+12. Show prediction results on frontend:
+
+* Success Score
+* Risk Level
+* Growth Potential
+* AI Recommendations
+
+13. Generate complete production-ready folder structure.
+
+14. Add requirements.txt.
+
+15. Add README explaining:
+
+* ML workflow
+* Dataset
+* Model training
+* FastAPI setup
+* Frontend integration
+
+16. Code should be beginner-friendly, properly commented, and suitable for an MCA portfolio project.
+
+17. Final result should be a genuine Python + Machine Learning project that I can confidently showcase for Software Engineering and AI/ML internship applications.
+
+Before changing files, first analyze my existing VentureIQ project structure and then perform the migration carefully.

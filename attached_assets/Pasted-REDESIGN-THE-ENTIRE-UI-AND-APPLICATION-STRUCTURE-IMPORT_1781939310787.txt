@@ -1,0 +1,116 @@
+REDESIGN THE ENTIRE UI AND APPLICATION STRUCTURE.
+
+IMPORTANT:
+
+* Do NOT use the current landing page design.
+* Do NOT create a hero section with large centered headings.
+* Do NOT use a startup marketing website layout.
+* Do NOT make it look similar to InternPredict AI.
+* The application should feel like a professional business analytics platform.
+* Completely redesign the frontend.
+
+DESIGN INSPIRATION:
+
+Take inspiration from:
+
+* Stripe Dashboard
+* Notion
+* Linear
+* Power BI
+* Modern SaaS Admin Panels
+
+THEME:
+
+* Dark Navy (#0F172A)
+* Slate Gray
+* White text
+* Glassmorphism cards
+* Professional blue accents
+* Clean corporate appearance
+
+LAYOUT:
+
+Create a dashboard application with:
+
+1. LEFT SIDEBAR
+
+* Logo (VentureIQ AI)
+* Dashboard
+* Business Analysis
+* Predictions
+* Reports
+
+2. TOP HEADER
+
+* Page Title
+* Search Bar
+* User Profile Section
+
+3. DASHBOARD OVERVIEW
+
+Display summary cards:
+
+* Success Score
+* Risk Level
+* Growth Potential
+* Business Health Score
+
+Use modern statistic cards with icons.
+
+4. BUSINESS ANALYSIS SECTION
+
+Show input form inside premium cards.
+
+Fields:
+
+* Business Name
+* Industry
+* Investment
+* Team Size
+* Experience
+* Marketing Budget
+* Competition Level
+
+5. PREDICTION RESULTS
+
+Display results inside widgets:
+
+* Circular Progress Indicator
+* Growth Meter
+* Risk Gauge
+* Success Score Card
+
+6. ANALYTICS SECTION
+
+Include:
+
+* Bar Charts
+* Growth Charts
+* Industry Comparison
+* Business Potential Graphs
+
+Use Recharts.
+
+7. AI INSIGHTS PANEL
+
+Show recommendations in a separate professional card.
+
+Examples:
+
+* Increase marketing budget
+* Reduce competition exposure
+* Improve founder expertise
+
+VISUAL REQUIREMENTS:
+
+* Dashboard-first design
+* Software product appearance
+* No giant marketing text
+* No landing-page sections
+* No website-style homepage
+* No excessive gradients
+* No startup template look
+
+The project should feel like an enterprise business intelligence tool used by investors and analysts.
+
+The final UI must look completely different from InternPredict AI and should appear as a premium analytics dashboard suitable for portfolio and recruiter review.

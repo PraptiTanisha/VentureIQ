@@ -1,0 +1,152 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: VentureIQ AI - Business Success Predictor API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: prediction
+    description: Business prediction operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /predict:
+    post:
+      operationId: predictBusiness
+      tags: [prediction]
+      summary: Predict business success
+      description: Analyzes business inputs and returns success score, risk level, growth potential, and recommendations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BusinessInput"
+      responses:
+        "200":
+          description: Prediction result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PredictionResult"
+        "400":
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    BusinessInput:
+      type: object
+      required:
+        - businessName
+        - businessType
+        - initialInvestment
+        - teamSize
+        - founderExperience
+        - marketingBudget
+        - competitionLevel
+        - targetMarketSize
+      properties:
+        businessName:
+          type: string
+          minLength: 1
+        businessType:
+          type: string
+          enum: [Technology, E-commerce, Healthcare, Education, Finance, "Food & Beverage", Other]
+        initialInvestment:
+          type: number
+          minimum: 0
+        teamSize:
+          type: integer
+          minimum: 1
+        founderExperience:
+          type: integer
+          minimum: 0
+        marketingBudget:
+          type: number
+          minimum: 0
+        competitionLevel:
+          type: string
+          enum: [Low, Medium, High]
+        targetMarketSize:
+          type: string
+          enum: [Small, Medium, Large]
+    PredictionResult:
+      type: object
+      required:
+        - successScore
+        - riskLevel
+        - growthPotential
+        - recommendations
+        - breakdown
+      properties:
+        successScore:
+          type: number
+          minimum: 0
+          maximum: 100
+        riskLevel:
+          type: string
+          enum: [Low, Medium, High]
+        growthPotential:
+          type: string
+          enum: [Low, Medium, High]
+        recommendations:
+          type: array
+          items:
+            type: string
+        breakdown:
+          $ref: "#/components/schemas/ScoreBreakdown"
+    ScoreBreakdown:
+      type: object
+      required:
+        - investmentScore
+        - teamScore
+        - experienceScore
+        - marketingScore
+        - marketScore
+        - competitionScore
+      properties:
+        investmentScore:
+          type: number
+        teamScore:
+          type: number
+        experienceScore:
+          type: number
+        marketingScore:
+          type: number
+        marketScore:
+          type: number
+        competitionScore:
+          type: number
+    ErrorResponse:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: string
