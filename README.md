@@ -1,111 +1,145 @@
-VentureIQ AI
+# 🚀 VentureIQ 
 
-AI-powered startup analysis platform that predicts business success using Machine Learning.
+An AI-powered startup analysis platform that evaluates business ideas using Machine Learning. The application predicts startup success, growth potential, and business risk based on key business parameters.
 
-Tech Stack
+---
 
-Frontend
+## ✨ Features
+
+- Business Success Prediction
+- Growth Potential Analysis
+- Risk Level Prediction
+- Startup Score Evaluation
+- Interactive Dashboard
+- REST API Integration
+- Machine Learning Prediction Model
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
 - React
 - TypeScript
 - Vite
 - Tailwind CSS
 
-Backend
+### Backend
 - Node.js
 - Express.js
 
-Machine Learning
+### Machine Learning
 - Python
 - Scikit-learn
 - Pickle (.pkl)
 
-Features
+---
 
-- Business Success Prediction
-- Startup Risk Analysis
-- Growth Potential Score
-- Investment Analysis
-- Modern Dashboard
-- REST API
+## 📂 Project Structure
 
-Run Project
+```text
+Vent-AI-main
+│
+├── artifacts
+│   ├── venture-iq
+│   │   ├── src
+│   │   ├── public
+│   │   ├── package.json
+│   │   └── vite.config.ts
+│   │
+│   └── api-server
+│       ├── src
+│       │   ├── routes
+│       │   ├── middlewares
+│       │   ├── lib
+│       │   ├── app.ts
+│       │   └── index.ts
+│       ├── build.mjs
+│       └── package.json
+│
+├── attached_assets
+├── lib
+├── scripts
+├── package.json
+├── pnpm-workspace.yaml
+└── README.md
+```
 
-Frontend
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/PraptiTanisha/VentureIQ.git
+
+cd VentureIQ
+
+pnpm install
+```
+
+---
+
+## ▶️ Run Frontend
 
 ```bash
 cd artifacts/venture-iq
-pnpm install
+
 pnpm dev
 ```
 
-Backend
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## ▶️ Run Backend
 
 ```bash
 cd artifacts/api-server
+
 pnpm run build
+
 $env:PORT=3000
+
 node dist/index.mjs
 ```
 
-Application
+Backend runs at:
 
-Frontend
-VentureIQ AI
-
-AI-powered startup analysis platform that predicts business success using Machine Learning.
-
-Tech Stack
-
-Frontend
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-
-Backend
-- Node.js
-- Express.js
-
-Machine Learning
-- Python
-- Scikit-learn
-- Pickle (.pkl)
-
-Features
-
-- Business Success Prediction
-- Startup Risk Analysis
-- Growth Potential Score
-- Investment Analysis
-- Modern Dashboard
-- REST API
-
-Run Project
-
-Frontend
-
-```bash
-cd artifacts/venture-iq
-pnpm install
-pnpm dev
+```
+http://localhost:3000
 ```
 
-Backend
+Health Check:
 
-```bash
-cd artifacts/api-server
-pnpm run build
-$env:PORT=3000
-node dist/index.mjs
+```
+http://localhost:3000/api/healthz
 ```
 
-Application
+---
 
-Frontend
-Runs on Vite Development Server
+## 🤖 Machine Learning
 
-Backend
-Runs on Express API Server
+The project uses a trained Python Machine Learning model to evaluate startup ideas based on business parameters such as:
 
-Author
-Prapti Tanisha
+- Initial Investment
+- Team Size
+- Founder Experience
+- Marketing Budget
+- Competition Level
+- Target Market Size
+
+The trained model returns business prediction, growth potential, and overall startup score.
+
+
+---
+
+## 👩‍💻 Author
+
+**Prapti Tanisha**
+
+GitHub:
+https://github.com/PraptiTanisha
