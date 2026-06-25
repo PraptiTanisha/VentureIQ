@@ -86,7 +86,8 @@ $env:PORT=3000
 
 node dist/index.mjs
  
- 
+
+
  🌐 Running Application
 
 Frontend
@@ -105,6 +106,7 @@ Health Check
  
 http://localhost:3000/api/healthz
  
+
 
  📊 Machine Learning Model
 
