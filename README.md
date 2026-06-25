@@ -109,10 +109,3 @@ Runs on Express API Server
 
 Author
 Prapti Tanisha
-
-Backend
-http://localhost:3000/api/healthz
-
-Author
-
-Prapti Tanisha 
